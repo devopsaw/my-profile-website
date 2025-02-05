@@ -7,4 +7,4 @@ The only issue I encountered was disabling Pages. In Part 1 Step 2 of the GitHub
 
 The following is instructions for how to trigger the deployment:
 Go to the GitHub repo's settings and disable automatic page publishing.
-Commit changes made in the deploy.yml workflow file and then push the changes to the GitHub repo. This triggers the workflow, which executes the jobs and steps in the deployment workflow. A repository event such as 'push' triggers GitHub workflows. You can manual re-trigger the deployment by clicking 'rerun all jobs'.
+Commit changes made in the deploy.yml workflow file and then push the changes to the GitHub repo. This triggers the workflow, which executes the jobs and steps in the deployment workflow. A repository event such as 'push' triggers GitHub workflows as long as the trigger event is enabled in the workflow (on: push:). You can manual re-trigger the deployment by clicking 'rerun all jobs'.
